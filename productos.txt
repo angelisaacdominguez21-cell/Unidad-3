@@ -1,0 +1,5 @@
+1|tenis|1500|deportiva
+2|playeras|300|normal
+3|pantalones de mezclilla|700|formal
+4|gorro|200|Accesorios
+5|guantes|100|Accesorio de invierno
