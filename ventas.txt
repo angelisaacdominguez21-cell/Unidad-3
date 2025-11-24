@@ -1,0 +1,5 @@
+playeras|300.0|2|600.0
+gorro|200.0|1|200.0
+tenis|1500.0|2|3000.0
+pantalones de mezclilla|700.0|3|2100.0
+guantes|100.0|2|200.0
