@@ -279,8 +279,35 @@ def abrir_reportes():
     )
     lbl_total.pack(pady=10)
 def abrir_acerca_de():
-    messagebox.showinfo("Acerca de", "Punto de Venta de Ropa\nProyecto Escolar\nVersión 1.0")
+   # Ventana emergente "Acerca de"
+    acerca_de_ventana = tk.Toplevel()
+    acerca_de_ventana.title("Acerca de este Proyecto")
+    acerca_de_ventana.geometry("400x400")
+    acerca_de_ventana.configure(bg="#f2f2f2")
+    
+    # Texto con información sobre el proyecto
+    mensaje = """
+    Proyecto: Reporte de Ventas
 
+    Descripción:
+    Este proyecto permite visualizar\n
+    los reportes de ventas realizadas \n.
+    Se lee un archivo de texto'\n
+    y se muestra en una tabla\n
+    dentro de una interfaz gráfica\n
+    construida con Tkinter.\n
+    Además, muestra\n
+    el total de todas las ventas realizadas.\n
+
+    ¡Felicidades, llegaste al final del curso!\n
+    """
+    
+    label_acerca_de = tk.Label(acerca_de_ventana, text=mensaje, font=("Arial", 12), bg="#f2f2f2", justify="left")
+    label_acerca_de.pack(pady=20)
+
+    # Botón para cerrar la ventana "Acerca de"
+    cerrar_btn = tk.Button(acerca_de_ventana, text="Cerrar", command=acerca_de_ventana.destroy)
+    cerrar_btn.pack()
 # -------------------------
 # VENTANA PRINCIPAL
 # -------------------------
@@ -345,4 +372,5 @@ btn_acerca.pack(pady=10)
 # -------------------------
 # INICIO DE LA APP
 # -------------------------
+
 ventana.mainloop()
